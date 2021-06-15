@@ -23,12 +23,7 @@ function optionChanged(selectedID){
     
     // Filter Metadata for selected ID from dropdown
     const idMetadata = data.metadata.filter(item=> (item.id == selectedID));
-       // {
-       //    console.log("------------------------")
-       //    console.log(item);
-       //    console.log(item.id);
-          
-       // });
+       
     // Check the metadata loaded for the selected ID
     console.log(idMetadata);
     
@@ -36,7 +31,6 @@ function optionChanged(selectedID){
     panelDisplay.html("");
     Object.entries(idMetadata[0]).forEach(item=> 
        {
-          // console.log(item);
           panelDisplay.append("p").text(`${item[0]}: ${item[1]}`)
        });
  
@@ -55,7 +49,6 @@ function optionChanged(selectedID){
  
     // Y axis of bar chart
     const yAxis = otuID.map(item => 'OTU' + " " + item);
-       // console.log(yAxis);
     
     // Define the layout and trace object, edit color and orientation
        const trace = {
