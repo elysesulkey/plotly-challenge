@@ -73,7 +73,7 @@ function optionChanged(selectedID){
        },
        layout = {
        title: 'Top 10 Operational Taxonomic Units (OTU)/Individual',
-       xaxis: {title: 'Number of Samples Collected'},
+       xaxis: {title: 'Number of Samples'},
        yaxis: {title: 'OTU ID'}
        };
  
@@ -101,7 +101,7 @@ function optionChanged(selectedID){
   layout1 = {
     title: '<b>Bubble Chart For Each Sample</b>',
     xaxis: {title: 'OTU ID'},
-    yaxis: {title: 'Number of Samples Collected'},
+    yaxis: {title: 'Number of Samples'},
     showlegend: false,
     height: 800,
     width: 1800
