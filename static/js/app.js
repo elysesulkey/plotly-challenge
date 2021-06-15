@@ -58,7 +58,7 @@ function optionChanged(selectedID){
        orientation: "h",
        text:  otuLabels,
        marker: {
-          //color: 'rgb(70, 130, 180)',
+          color: "#9370db",
           line: {
              width: 3
          }
@@ -119,17 +119,17 @@ function optionChanged(selectedID){
       mode: "gauge+number",     
        gauge: {
        axis: { range: [0,9] },
-       bar: { color: "#f2e9e4" },
+       bar: { color: "#e6e6fa" },
        steps: [
-          { range: [0, 1], color: "#e5d5d0" },
-          { range: [1, 2], color: "#dbc7c2" },
-          { range: [2, 3], color: "#d2b9b4" },
-          { range: [3, 4], color: "#c9ada7" },
-          { range: [4, 5], color: "#ac9899" },
-          { range: [5, 6], color: "#8a7e88" },
-          { range: [6, 7], color: "#7d7482" },
-          { range: [7, 8], color: "#706a7b" },
-          { range: [8, 9], color: "#4a4e69" }
+          { range: [0, 1], color: "#d8bfd8" },
+          { range: [1, 2], color: "#dda0dd" },
+          { range: [2, 3], color: "#da70d6" },
+          { range: [3, 4], color: "#ee82ee" },
+          { range: [4, 5], color: "#ff00ff" },
+          { range: [5, 6], color: "#ba55d3" },
+          { range: [6, 7], color: "#9932cc" },
+          { range: [7, 8], color: "#9400d3" },
+          { range: [8, 9], color: "#8a2be2" }
                 
         ],
        threshold: {
