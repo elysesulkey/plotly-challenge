@@ -78,6 +78,7 @@ function optionChanged(selectedID){
  // Remove Sample value and otuID from individual
  var sampleValue1 =idSample[0].sample_values;
  var otuID1= idSample[0].otu_ids;
+ var bubbleColors = otuID1.map( val => d3.interpolateRgbBasis(["lavender", "lemonchiffon", "lightcyan"])(mapNr(val)));
  
  // Define the layout and trace object, edit color and orientation
  const trace1 = {
@@ -85,7 +86,7 @@ function optionChanged(selectedID){
     y: sampleValue1,
     mode: 'markers',
     marker: {
-      color: otuID1,
+      color: bubbleColors,
       
       size: sampleValue1
     }
