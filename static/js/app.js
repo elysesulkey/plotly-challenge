@@ -7,7 +7,7 @@ function optionChanged(selectedID){
     // Read the json file for the data
     d3.json("data/samples.json").then((data) => {
  
-   //  console.log(data);
+    console.log(data);
  
     // Clear dropdown
     d3.select("#selDataset").html("");   
@@ -15,7 +15,7 @@ function optionChanged(selectedID){
     // Select metadata array and append item ID, adds ID to dropdown
     data.metadata.forEach(item =>
          {
-          // console.log(item.id);
+        console.log(item.id);
          d3.select ("#selDataset").append('option').attr('value', item.id).text(item.id);
          });
     // Selected value passed
