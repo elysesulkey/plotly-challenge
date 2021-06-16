@@ -50,12 +50,12 @@ function optionChanged(selectedID){
     // console.log(idSample[0].otu_ids);  
     // console.log(idSample[0].otu_labels);  
 
-    var sampleValue = idSample[0].sample_values.slice(0,10);
-    sampleValue= sampleValue.reverse();
-    var otuID = idSample[0].otu_ids.slice(0,10);
-    otuID = otuID.reverse();
-    var otuLabels = idSample[0].otu_labels
-    otuLabels = otuLabels.reverse();
+    var sample_value = idSample[0].sample_values.slice(0,10);
+    sample_value= sample_value.reverse();
+    var otu_ID = idSample[0].otu_ids.slice(0,10);
+    otu_ID = otu_ID.reverse();
+    var otu_label = idSample[0].otu_labels
+    otu_label = otu_label.reverse();
  
     // // Check values
     //  console.log(sampleValue);
@@ -63,15 +63,15 @@ function optionChanged(selectedID){
     //  console.log(otuLabels);
 
     // Y axis of bar chart
-    const yAxis = otuID.map(item => 'OTU' + " " + item);
+    const yAxis = otu_ID.map(item => 'OTU' + " " + item);
     
     // Define the layout and trace object, edit color and orientation
        const trace = {
        y: yAxis,
-       x: sampleValue,
+       x: sample_value,
        type: 'bar',
        orientation: "h",
-       text:  otuLabels,
+       text:  otu_label,
        marker: {
           color: "#9370db",
           line: {
@@ -91,17 +91,17 @@ function optionChanged(selectedID){
  // BUBBLE CHART
  
  // Remove Sample value and otuID from individual
- var sampleValue1 =idSample[0].sample_values;
- var otuID1= idSample[0].otu_ids;
+ var sample_value1 =idSample[0].sample_values;
+ var otu_ID1= idSample[0].otu_ids;
  
  // Define the layout and trace object, edit color and orientation
  const trace1 = {
-    x: otuID1,
-    y: sampleValue1,
+    x: otu_ID1,
+    y: sample_value1,
     mode: 'markers',
     marker: {
-        size: sampleValue1,
-        color: otuID1,
+        size: sample_value1,
+        color: otu_ID1,
         colorscale: 'Picnic'
     }
   },
