@@ -130,7 +130,7 @@ function optionChanged(selectedID){
     {
       domain: { x: [0, 1], y: [0, 1] },
       value: washFreq,
-      title: { text: "<b>Belly Button Washing Frequency </b><br> (Scrubs Per Week)" },
+      title: { text: "<b>Belly Button Washing Frequency </b><br> (Scrubs/Week)" },
       type: "indicator",
       mode: "gauge+number",     
        gauge: {
