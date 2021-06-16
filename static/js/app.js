@@ -102,7 +102,7 @@ function optionChanged(selectedID){
     marker: {
         size: sampleValue1,
         color: otuID1,
-        colorscale: 'RdPu'
+        colorscale: 'Picnic'
     }
   },
  
